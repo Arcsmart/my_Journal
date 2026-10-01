@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Redirects single-page app routes (e.g. /about) to index.html so refreshing doesn't break
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
